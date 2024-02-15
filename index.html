@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Buiding a todo list with jQuery</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+      }
+      form {
+        width: 50%;
+        margin: auto;
+        padding: 20px;
+        text-align: center;
+      }
+      input {
+        width: 100%;
+        border: 1px solid #ccc;
+      }
+      label,
+      input,
+      button {
+        font-size: 16px;
+        margin-bottom: 10px;
+      }
+      input,
+      button {
+        display: inline-block;
+        padding: 10px 15px;
+        border-radius: 4px;
+      }
+      button {
+        border: 1px solid purple;
+        background: purple;
+        color: #fff;
+      }
+      ul {
+        margin-top: 20px;
+      }
+      li {
+        margin-bottom: 20px;
+      }
+      .label {
+        padding: 5px 10px;
+      }
+      .pending {
+        background: yellow;
+      }
+      .success {
+        background: green;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <input type="text" id="todo-item" placeholder="Add a list" required />
+      <button>Submit</button>
+    </form>
+    <span id="task-length"></span>
+    <ul id="items"></ul>
+
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
